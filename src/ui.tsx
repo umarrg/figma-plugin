@@ -1,12 +1,13 @@
 import { ActionContainer, Card } from "@componlyco/berkoukes";
-import { Container, render, Text } from "@create-figma-plugin/ui";
+import { Container, Text } from "@create-figma-plugin/ui";
 import { emit } from "@create-figma-plugin/utilities";
-import { h } from "preact";
+import { h } from 'preact';
+import { render } from 'preact'; // Ensure you're using Preact's render method
 import { useCallback, useState } from "preact/hooks";
 
 function Plugin() {
   return (
-    <Container>
+    <Container space="medium">
       <div
         style={{
           height: "50vh",
@@ -19,4 +20,4 @@ function Plugin() {
   );
 }
 
-export default render(Plugin);
+render(<Plugin />, document.body);  

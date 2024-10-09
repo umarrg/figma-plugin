@@ -1,27 +1,29 @@
 {
-  "dependencies": {
-    "@create-figma-plugin/ui": "^3.2.0",
-    "@create-figma-plugin/utilities": "^3.2.0",
-    "preact": ">=10",
-    "@componlyco/berkoukes": "^2.0.5"
-  },
-  "devDependencies": {
-    "@create-figma-plugin/build": "^3.2.0",
-    "@create-figma-plugin/tsconfig": "^3.2.0",
-    "@figma/plugin-typings": "1.100.2",
-    "typescript": ">=4"
-  },
-  "scripts": {
-    "build": "build-figma-plugin --typecheck --minify",
-    "watch": "build-figma-plugin --typecheck --watch"
-  },
-  "figma-plugin": {
-    "editorType": [
-      "figma"
-    ],
-    "id": "plugin",
-    "name": "Plugin",
-    "main": "src/main.ts",
-    "ui": "src/ui.tsx"
-  }
+    "dependencies": {
+        "@componlyco/berkoukes": "^2.0.5",
+        "@create-figma-plugin/ui": "^3.2.0",
+        "@create-figma-plugin/utilities": "^3.2.0",
+        "preact": "^10.24.2"
+    },
+    "devDependencies": {
+        "@create-figma-plugin/build": "^3.2.0",
+        "@create-figma-plugin/tsconfig": "^3.2.0",
+        "@figma/plugin-typings": "1.100.2",
+        "@types/react": "^18.3.11",
+        "@types/react-dom": "^18.3.0",
+        "typescript": ">=4"
+    },
+    "scripts": {
+        "build": "build-figma-plugin --typecheck --minify",
+        "watch": "build-figma-plugin --typecheck --watch"
+    },
+    "figma-plugin": {
+        "editorType": [
+            "figma"
+        ],
+        "id": "plugin",
+        "name": "Plugin",
+        "main": "src/main.ts",
+        "ui": "src/ui.tsx"
+    }
 }
